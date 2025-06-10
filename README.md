@@ -32,6 +32,6 @@ To run this project locally:
 
 ```bash
 # Clone the repository
-git clone 
+git clone https://github.com/baidya-ripan-024/portfolio.git
 ```
 
