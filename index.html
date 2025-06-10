@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ripan Baidya - Java, Spring Boot, and Microservices Developer Portfolio">
+    <meta name="keywords"
+        content="Java Developer, Spring Boot, Microservices, Backend Developer, Ripan Baidya, Portfolio">
+    <title>Ripan Baidya's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon/img.png">
+</head>
+
+<body data-theme="light">
+    <header id="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="nav-logo">Ripan Baidya</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle-checkbox">
+                    <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+            </div>
+            <div class="container hero-content">
+                <h1 id="dynamic-headline">Ripan Baidya</h1>
+                <p class="subheading">Building Scalable, Robust, and Efficient Backend Solutions using Java, Spring Boot, and Microservices Architecture.</p>
+                <div class="cta-buttons">
+                    <a href="resume/Resume_Ripan_Baidya.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- model for image -->
+        <div id="image-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+             background-color: rgba(0,0,0,0.95); z-index: 9999; justify-content: center; align-items: center;">
+            <span id="modal-close"
+                style="position: absolute; top: 30px; right: 40px; font-size: 40px; color: white; cursor: pointer;">&times;</span>
+            <img id="modal-img" style="max-width: 90%; max-height: 90vh; border-radius: 10px;" />
+        </div>
+
+        <section id="about" class="about-section content-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/profile/RipanBaidya.jpg" alt="Ripan Baidya" class="profile-clickable"/>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm <strong>Ripan Baidya</strong>, a passionate <strong>Java Backend Developer</strong> specializing in building scalable, high-performance applications
+                            with <strong>Spring Boot</strong> and <strong>Microservices Architecture</strong>. I leverage <strong>AI-powered development tools</strong> to enhance productivity and
+                            code quality.
+                        </p>
+                        <br>
+                        <p>
+                            What drives me is the challenge of turning complex problems into elegant, maintainable solutions. I'm fascinated by
+                            backend architecture and love crafting robust systems that can handle real-world demands. From designing RESTful APIs to
+                            implementing microservices, I focus on writing clean code that performs—while utilizing AI tools to accelerate
+                            development and catch potential issues early.
+                        </p>
+                        <div id="more-about-me" class="more-about-me-content collapsed">
+                            <h4>Core Technologies</h4>
+                            <ul>
+                                <li><strong>Java | Spring Framework | Spring Boot</strong></li>
+                                <li><strong>Microservices Architecture | RESTful APIs</strong></li>
+                                <li><strong>PostgreSQL | MongoDB | GraphQL | Docker </strong></li>
+                                <li><strong>AI-Enhanced Development | Code Review & Automation Tools</strong></li>
+                            </ul>
+                            <h4>Credentials</h4>
+                            <ul>
+                                <li>
+                                    <strong>Bachelor of Computer Application</strong> - <a href="https://www.daitm.org.in/">Dinabandhu Andrews Institute of Technology and Management</a> (2022-2025)
+                                </li>
+                                <li>
+                                    <strong>Certified: </strong>
+                                    <a href="https://drive.google.com/file/d/1w3iPZ10T7SszTbXcMgbr_sZTCag8-RXR/view?usp=drive_link" target="_blank">Java Programming, </a>
+                                    <a href="https://drive.google.com/file/d/1eDyOyMGjEgaXCE3WSIzQZox5oTPbIZQd/view?usp=drive_link" target="_blank">Spring Framework, </a>
+                                    <a href="https://drive.google.com/file/d/1NN0M4p9Bjw6LCV-ufhcFyARXcXvjb9jq/view?usp=drive_link" target="_blank">SpringBoot-Microservice</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="toggle-more-about" class="btn btn-link">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section -->
+        <section id="skills" class="skills-section content-section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <!-- 1. Languages -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/icons8-frontend-64.png" class="skill-icon-svg"
+                                    alt="programming icon"></span> Languages
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/Java.svg" class="skill-icon-svg" alt="java icon"></span> Java</li>
+                            <li><span><img src="images/icons/icons8-python-48.png" class="skill-icon-svg"
+                                        alt="Python icon"></span> Python</li>
+                            <li><span><img src="images/icons/icons8-c++-48.png" class="skill-icon-svg" alt="c++ icon"></span>
+                                C++</li>
+                        </ul>
+                    </div>
+        
+                    <!-- 2. Frontend -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/monitor_644874.png" class="skill-icon-svg" alt="frontend icon"></span>
+                            Frontend
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/icons8-html5-48.png" class="skill-icon-svg" alt="html icon"></span>
+                                HTML</li>
+                            <li><span><img src="images/icons/icons8-css3-48.png" class="skill-icon-svg" alt="css icon"></span>
+                                CSS</li>
+                            <li><span><img src="images/icons/icons8-javascript-48.png" class="skill-icon-svg"
+                                        alt="JavaScript icon"></span> JavaScript</li>
+                        </ul>
+                    </div>
+        
+                    <!-- 3. Backend / Frameworks -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/icons8-framework-48.png" class="skill-icon-svg"
+                                    alt="backend icon"></span> Backend
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/Spring.svg" class="skill-icon-svg" alt="spring-boot icon"></span>
+                                Spring</li>
+                            <li><span><img src="images/icons/Hibernate.svg" class="skill-icon-svg" alt="Hibernate icon"></span>
+                                Hibernate</li>
+                            <li><span><img src="images/icons/Spring.svg" class="skill-icon-svg" alt="spring-web icon"></span>
+                                Spring Boot</li>
+                            <li><span><img src="images/icons/Spring.svg" class="skill-icon-svg" alt="spring-web icon"></span>
+                                Spring Security</li>
+                        </ul>
+                    </div>
+        
+                    <!-- 4. Databases -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/icons8-databases-47.png" class="skill-icon-svg"
+                                    alt="Databases icon"></span> Databases
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/icons8-postgresql-48.png" class="skill-icon-svg"
+                                        alt="PostgreSQL icon"></span> PostgreSQL</li>
+                            <li><span><img src="images/icons/icons8-mongodb-24.png" class="skill-icon-svg"
+                                        alt="MongoDB icon"></span> MongoDB</li>
+                        </ul>
+                    </div>
+        
+                    <!-- 5. Microservices & DevOps -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/icons8-network-48.png" class="skill-icon-svg"
+                                    alt="Microservices icon"></span> Microservices
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/Spring.svg" class="skill-icon-svg" alt="spring-boot icon"></span>
+                                Spring Cloud</li>
+                            <li><span><img src="images/icons/icons8-docker-48.png" class="skill-icon-svg"
+                                        alt="Docker icon"></span> Docker</li>
+                            <li><span><img src="images/icons/icons8-rest-api-50 (1).png" class="skill-icon-svg"
+                                        alt="ali-gateway icon"></span> API Gateway</li>
+                            <li><span><img src="images/icons/RabbitMQ.svg" class="skill-icon-svg" alt="RabbitMQ icon"></span>
+                                RabbitMQ</li>
+                            <li><span><img src="images/icons/AWS.svg" class="skill-icon-svg" alt="AWS icon"></span> AWS</li>
+                        </ul>
+                    </div>
+        
+                    <!-- 6. Tools and Technologies -->
+                    <div class="skill-category">
+                        <h3>
+                            <span><img src="images/icons/icons8-technology-100.png" class="skill-icon-svg"
+                                    alt="Other icon"></span> Technologies
+                        </h3>
+                        <ul class="skills-list">
+                            <li><span><img src="images/icons/FastAPI.svg" class="skill-icon-svg" alt="REST icon"></span> REST
+                            </li>
+                            <li><span><img src="images/icons/icons8-graphql-24.png" class="skill-icon-svg"
+                                        alt="GraphQL icon"></span> GraphQL</li>
+                            <!-- <li><span><img src="images/icons/oauth-svgrepo-com.svg" class="skill-icon-svg"
+                                        alt="OAuth2 icon"></span> OAuth2</li> -->
+                            <li><span><img src="images/icons/icons8-jwt-48.png" class="skill-icon-svg" 
+                                alt="JWT icon"></span> JWT</li>
+                            <li><span><img src="images/icons/Apache Maven.svg" class="skill-icon-svg"
+                                alt="Maven icon"></span> Maven</li>
+                            <li><span><img src="images/icons/icons8-git-48 (1).png" class="skill-icon-svg"
+                                        alt="Git icon"></span> Git</li>
+                            <li><span><img src="images/icons/icons8-github-64.png" class="skill-icon-svg"
+                                        alt="github icon"></span> GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section content-section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <img src="images/projects/foodapp.png" alt="foodapp">
+                        <div class="project-info">
+                            <h3>FoodSphere</h3>
+                            <p class="project-tech-stack"> Java, Spring Boot, Jwt, PostgreSQL, React, Stripe, AWS </p>
+                            <p> 
+                                Scalable Food Ordering Web Application enabling seamless restaurant-customer interaction, built with Java, Spring Boot,
+                                React, PostgreSQL, and AWS. Implemented secure JWT-based access, real-time order management, Stripe payments,
+                                and a centralized admin dashboard for full operational control.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/baidya-ripan-024/foodsphere" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://your-live-demo-url.com" target="_blank" class="btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/projects/sorting-visualizer.png" alt="Sorting Visualizer">
+                        <div class="project-info">
+                            <h3>Sorting Visualizer Pro</h3>
+                            <p class="project-tech-stack">HTML, CSS, JavaScript, Data Structures, Algorithms</p>
+                            <p> A comprehensive sorting algorithm visualizer that allows users to dynamically change the array size, 
+                                animation speed, and select from a variety of algorithms to visualize step-by-step.
+                            </p>                    
+                            <div class="project-links">
+                                <a href="https://github.com/ripanbaidya08/sorting-visualizer" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://sorting-visualizer-pro.vercel.app" target="_blank" class="btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/projects/task-management.png" alt="task-management">
+                        <div class="project-info">
+                            <h3>Task Management</h3>
+                            <p class="project-tech-stack">Spring Boot, Microservice, JWT, PostgreSQL</p>
+                            <p>
+                                A robust task management application designed to streamline project workflows and enhance team collaboration.
+                                Built with Spring Boot and Microservices architecture, it features secure JWT authentication, PostgreSQL for data storage,
+                                and a user-friendly interface for efficient task tracking and management.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/baidya-ripan-024/task-management" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/projects/ai-fitadviser.png" alt="ai-fitness advisor">
+                        <div class="project-info">
+                            <h3>AI-FitAdvisor</h3>
+                            <p class="project-tech-stack">Java, Spring-Boot, Microservice, PostgreSQL, MongoDB, RabbitMQ, React, Gemini AI</p>
+                            <p>
+                                A cutting-edge AI-powered fitness recommendation application that provides users with tailored workout
+                                plans and nutrition advice. The application is built using Java, Spring Boot, and Microservices
+                                architecture, ensuring scalability, maintainability, and high performance. Additionally, it utilizes
+                                Gemini AI for AI-driven recommendations.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/baidya-ripan-024/AI-FitAdvisor" target="_blank" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://ai-fit-advisor.vercel.app/" target="_blank" class="btn-icon"><iclass="fas fa-external-link-alt></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- chat app -->
+                    <div class="project-card">
+                        <img src="images/projects/chat-app.png" alt="chat app">
+                        <div class="project-info">
+                            <h3>Chat App</h3>
+                            <p class="project-tech-stack">Java, Spring-Boot, Socket.IO, JavaScript</p>
+                            <p>
+                                A real-time chat platform enabling instant login and communication, and built with Java, Spring Boot, and Socket.IO for
+                                bi-directional messaging. 
+                                It also features a clean and user-friendly interface, with a responsive design for optimal user experience.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/baidya-ripan-024/real-time-chatapp-springboot" target="_blank" class="btn-icon"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                                <a href="https://real-time-chatapp-springboot.vercel.app/" target="_blank" class="btn-icon">
+                                    <iclass="fas fa-external-link-alt></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="images/projects/ecommerce.png" alt="ecommerce">
+                        <div class="project-info">
+                            <h3>E-Commerce Application</h3>
+                            <p class="project-tech-stack"> Java, Spring Boot, Data JPA, PostgreSQL, Jwt, AWS </p>
+                            <p> A production ready fully featured e-commerce platform built with Spring Boot, Spring Data,
+                                and PostgreSQL. It includes features like product management, user authentication, and
+                                order processing. Deployed on AWS for high availability and scalability.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/baidya-ripan-024/ecommerce" target="_blank" class="btn-icon"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank" class="btn-icon"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- experience section -->
+        <section id="experience" class="experience-section content-section">
+            <div class="container">
+                <h2 class="section-title">Professional & Academic Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Java Developer Trainee</h3>
+                            <p class="timeline-company">Sha Infotech pvt Ltd. | July 2024 - August 2024</p>
+                            <ul>
+                                <li>Worked on real-time Java backend tasks and database management, strengthening backend consistency and
+                                hands-on skills with Oracle DB and SQL.</li>
+                                <li>Created and configured an Oracle database instance and imported a logical backup, improving data
+                                availability and system setup efficiency by 30%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Application</h3>
+                            <p class="timeline-company">Dinabandhu Andrews Institute of Technology and Management (2022-2025)</p>
+                            <ul>
+                                <li>Specialized in Software Development and Data Structures.</li>
+                                <li>Participated in various coding competitions and hackathons.</li>
+                                <li>Completed training of Databases and Cloud Computing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section content-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <!-- contacnt form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" action="https://formspree.io/f/mblyrezv" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name:</label> <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label><input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label><textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <img src="images/icons/send.png" alt="Send" class="send-icon"/>
+                            </button>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+                    <!-- contant details -->
+                    <div class="contact-details">
+                        <p>Feel free to reach out to me through the form or via my social channels:</p>
+                        <ul class="social-links">
+                            <li><a href="https://github.com/baidya-ripan-024" target="_blank"><i class="fab fa-github"></i>
+                                    GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/ripan-baidya-9230412a6/" target="_blank"><i
+                                        class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://leetcode.com/u/ryan024/" target="_blank"><i class="fas fa-code"></i>
+                                    LeetCode</a></li>
+                            <li><a href="mailto:baidya.ripan024@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                            <li><a href="tel:+91 7980717584"><i class="fas fa-phone"></i> Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+
+            <footer>
+                <p>&copy; <span id="current-year"></span> Ripan Baidya — Crafted with passion <i class="fas fa-heart"
+                        style="color: red;"></i></p>
+            </footer>
+              
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ripan-baidya-9230412a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/baidya-ripan-024" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+    
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
