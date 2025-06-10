@@ -703,13 +703,15 @@ body[data-theme="dark"] .project-card:hover {
     padding: 12px 14px;
     border-radius: 10px;
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.87);
+    color: var(--description-color);
     line-height: 1.6;
     margin-bottom: 16px;
     letter-spacing: 0.25px;
     font-weight: 400;
     transition: background 0.3s ease;
 }
+
+
 
 .project-info p:not(.project-tech-stack):hover {
     background-color: rgba(255, 255, 255, 0.06);
