@@ -85,8 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hero Section: Dynamic Typing Headline
     const roles = [
-        "Ripan Baidya 👋",
-        "Software Developer 💻",
+        "Turning Coffee into Code ☕💻",
         "Java|Spring Boot|Microservices 🚀",
         "AI-Powered Development 🤖",
         "Open to Collaboration 🤝"
