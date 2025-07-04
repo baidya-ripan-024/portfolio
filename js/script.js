@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hero Section: Dynamic Typing Headline
     const roles = [
         "Turning Coffee into Code ☕💻",
-        "Java|Spring Boot|Microservices 🚀",
+        "Java ● Spring Boot ● Microservices 🚀",
         "AI-Powered Development 🤖",
         "Open to Collaboration 🤝"
     ];
